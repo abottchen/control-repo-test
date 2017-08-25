@@ -21,5 +21,6 @@ node 'pe-201721-master.puppetdebug.vlan' {
 }
 
 node default {
+  notify {'On production branch': }
   #  include linux_common::limits_conf
 }
