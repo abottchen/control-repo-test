@@ -1,0 +1,8 @@
+<%  @clusters.each do |c| -%>
+  <%= c %> is the hash for this entry
+  Key Pairs in that hash
+  ======================
+  <%  c.each_pair do |k,v| -%>
+    <%= k %> = <%= v %>
+  <% end -%>    
+<% end -%>    
